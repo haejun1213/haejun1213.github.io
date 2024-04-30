@@ -1,0 +1,134 @@
+@media screen and (min-width: 960px) {
+
+    h1 {
+        color: red;
+    }
+
+
+    .grid-container {
+        display: grid;
+        grid-template-rows: 5% 5% auto;
+        grid-template-columns: 33% 33% auto;
+        grid-template-areas:
+            "menu menu menu"
+            "header header header"
+            "intro study team";
+        justify-items: stretch;
+    }
+
+    #header {
+        grid-area: header;
+        text-align: center;
+    }
+
+    #nav {
+        grid-area: menu;
+        text-align: center;
+    }
+
+    #intro {
+        grid-area: intro;
+    }
+
+    #SWstudy {
+        grid-area: study;
+    }
+
+    #projectTeam {
+        grid-area: team;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 959px) {
+
+    h1 {
+        color: green;
+    }
+
+    #img {
+        width: 70%;
+        margin: 0% auto;
+        text-align: center;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-rows: 5% 5% 40% auto;
+        grid-template-columns: 50% auto;
+        grid-template-areas:
+            "menu menu"
+            "header header"
+            "intro intro"
+            "study team";
+
+    }
+
+    #header {
+        grid-area: header;
+        text-align: center;
+    }
+
+    #nav {
+        grid-area: menu;
+        text-align: center;
+    }
+
+    #intro {
+        grid-area: intro;
+    }
+
+    #SWstudy {
+        grid-area: study;
+    }
+
+    #projectTeam {
+        grid-area: team;
+    }
+}
+
+@media screen and (max-width: 639px) {
+
+    h1 {
+        color: blue;
+    }
+
+    #img {
+        width: 70%;
+        margin: auto;
+        text-align: center;
+
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-rows: 5% 5% 35% 50% auto;
+        grid-template-areas:
+            "menu"
+            "header"
+            "intro"
+            "study"
+            "team";
+
+    }
+
+    #header {
+        grid-area: header;
+        text-align: center;
+    }
+
+    #nav {
+        grid-area: menu;
+        text-align: center;
+    }
+
+    #intro {
+        grid-area: intro;
+    }
+
+    #SWstudy {
+        grid-area: study;
+    }
+
+    #projectTeam {
+        grid-area: team;
+    }
+}
